@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('photo-1413745094207-a01b234cc32f.avif');
+    background-image: url('cof.avif');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -28,32 +28,63 @@ body {
 }
 
 .content {
-    padding: 20px; 
+    padding: 50px; 
     background-color: #edede9;
 
 }
 
-.cards {
-    max-width: 1440px;
-    margin: 100px auto;
-    padding: 20px;
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
+.content-text {
+    font-size: 18pt;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  margin-left: 120px;
+}
+
+.card {
+   border-radius: 10px;
+   display: flex;
+   justify-content: space-evenly;
+   gap: 20px;
+
+   
+   
 }
 
 .card-header {
-    display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
 .card-img {
-    width: 400px;
-    height: 400px;
-    margin-right: 10px;
-
+  width: 500px;
+  height: 600px;
+  margin-right: 10px;
+  border-radius: 10%;
+  
 
 }
 
+.card-info {
+ padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .container  {
+      flex-direction: column;
+
+    }
+   
+    }
