@@ -43,11 +43,16 @@ body {
     align-items: center;
 }
 
+.title {
+    text-align:  center;
+}
+
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 30px;
   padding: 20px;
   margin-left: 120px;
@@ -58,9 +63,6 @@ body {
    display: flex;
    justify-content: space-evenly;
    gap: 20px;
-
-   
-   
 }
 
 .card-header {
@@ -69,10 +71,10 @@ body {
 }
 
 .card-img {
-  width: 500px;
-  height: 600px;
-  margin-right: 10px;
-  border-radius: 10%;
+    width: 500px;
+    height: 600px;
+    margin-right: 10px;
+    border-radius: 10%;
   
 
 }

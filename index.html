@@ -4,61 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="accordion.css">
     <title>Cafe</title>
 </head>
 <body>
+
     <section class="hero">
         <div class="hero-text">
             <h1>Espresso Lane</h1>
         </div>
     </section>
 
-<section class="content">
-    <div class="content-header">
-    <h2>About Us</h2>
-    <p class="content-text">
-    Espresso Lane started from a passion for coffee and to create a space of belonging. Dedicated to sustainability and quality ingredients, we offer an assortment of drinks, freshly-baked pasteries, and a space for community. We proudly use fair-trade coffee and regularly partner with local small businesses. We put time and care into our craft, and and proudly serve our coffee with top-notch latte art.
-    </p>
-</div>
-<div class="video">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eBFg9GpGKWg?si=103T5_MpVQiPypv7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</section>
-<div class="container">
-    <h1>Featured Items</h1>
-  <div class="card">
-<header class="card-header">
-    <img src="latte.avif" class="card-img" alt="latte">
-    <div class="card-info">
-    <h3>Latte</h3>
-    <p>Our classic latte is a customer favourite.</p>
-</div>
-</header>
-<div class="card">
-    <header class="card-header">
-        <img src="icedcoff.avif" class="card-img" alt="iced coffee">
-        <div class="card-info">
-            <h3>Iced Latte</h3>
-            <p>Perfect for hot summer days.</p>
+    <section class="content">
+        <div class="content-header">
+            <h2>About Us</h2>
+            <p class="content-text">Espresso Lane started from a passion for coffee and to create a space of belonging. Dedicated to sustainability and quality ingredients, we offer an assortment of drinks, freshly-baked pasteries, and a space for community. We proudly use fair-trade coffee and regularly partner with local small businesses. We put time and care into our craft, and and proudly serve our coffee with top-notch latte art.</p>
         </div>
-    </header>
-    <div class="card">
-        <header class="card-header">
-            <img src="smoothie.avif" class="card-img" alt="iced coffee">
-            <div class="card-info">
-                <h3>Smoothies</h3>
-                <p>Refreshing and healthy.</p>
+        <div class="video">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/eBFg9GpGKWg?si=103T5_MpVQiPypv7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="FAQ">
+        <h1>FAQ</h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button">How should I choose a coffee?</button>
+                <div class="accordion-content">
+                    <p>Given that Little Waves roasts to balance, sweetness, and fullness of flavor, we encourage your enjoyment of any of our coffees on any brew method. 
+    
+                        Your best bet is thinking about the flavors you enjoy in coffee, then choosing an offering that reflects your preferred gustatory experience. </p>
+                </div>
             </div>
-        </header>
+            <div class="accordion-item">
+                <button class="accordion-button">What does speciality-grade mean?</button>
+                <div class="accordion-content">
+                    <p>As a progressive roaster focusing on quality we use the phrase 'speciality coffee' to mean coffees that have scored 80+ according to the Speciality Coffee Association and Coffee Quality Institute coffee grading standards.
+    
+                        We look to purchase coffees that score of 82+ and in most cases 85+. From a taste point of view, there is a significant difference between a coffee that scores 80 and one that scores 85.
+                        
+                        Generally speaking, coffees that score higher have more complexity. Another reason why we buy speciality-grade coffee is because this allows coffee producers to earn a significant premium for the high quality coffee that they produce.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">Is caffeine bad for you?</button>
+                <div class="accordion-content">
+                    <p>Like most things, caffeine is absolutely fine if consumed in moderation. However, there are a couple of side-effects if you do drink too much coffee.
+                        
+                        For example, you may have experienced a caffeine-induced energy crash. This can occur 25 minutes to a couple hours after you’ve consumed coffee or tea.
+                        
+                        It makes you feel extremely tired and sleepy, irritable, and unable to concentrate. Sometimes it can even feel a bit like a hangover due to nausea and headaches.
+                        
+                        We have a blog post about how to avoid energy crashes from coffee if this is something that you'd like to stop experiencing.
+                        
+                        We also have a great blog post all about caffeine, including more about its potential effects and how best to avoid them.</p>
+                </div>
+            </div>
+        </div>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var accordionButtons = document.querySelectorAll(".accordion-button");
+    
+        accordionButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                var content = this.nextElementSibling;
+    
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    // Hide all accordion contents
+                    document.querySelectorAll(".accordion-content").forEach(function(content) {
+                        content.style.display = "none";
+                    });
+                    content.style.display = "block";
+                }
+            });
+        });
+      });
+        </script>
+     </section>
+  <section>
+    <div class="title">
+    <h1>Featured Items</h1>
+    </div>
+    <div class="container">
         <div class="card">
             <header class="card-header">
-                <img src="muffin.avif" class="card-img" alt="muffins">
+                <img src="latte.avif" class="card-img" alt="latte">
                 <div class="card-info">
-                    <h3>Blueberry Muffins</h3>
-                    <p>Baked in-house.</p>
+                    <h3>Latte</h3>
+                    <p>Our classic latte is a customer favourite.</p>
                 </div>
             </header>
-</div>
-</section>
+        </div>
+        <div class="card">
+            <header class="card-header">
+                <img src="icedcoff.avif" class="card-img" alt="iced coffee">
+                <div class="card-info">
+                    <h3>Iced Latte</h3>
+                    <p>Perfect for hot summer days.</p>
+                </div>
+            </header>
+        </div>
+        <div class="card">
+            <header class="card-header">
+                <img src="smoothie.avif" class="card-img" alt="iced coffee">
+                <div class="card-info">
+                    <h3>Smoothies</h3>
+                    <p>Refreshing and healthy.</p>
+                </div>
+            </header>
+        </div>
+        <div class="card">
+            <header class="card-header">
+            <img src="muffin.avif" class="card-img" alt="muffins">
+            <div class="card-info">
+                <h3>Blueberry Muffins</h3>
+                <p>Baked in-house.</p>
+            </div>
+            </header>
+        </div>
+    </div>
+  </section>
+    <footer class="footer">
+        <div class="footer-content">
+        <p>&copy; 2024 Espresso Lane. All rights reserved.</p>
+        <ul class="footer-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+        <div class="social-media">
+        <a href="#facebook">Facebook</a>
+        <a href="#twitter">Twitter</a>
+        <a href="#linkedin">LinkedIn</a>
+        </div>
+        </div>
+    </footer>
+
 </body>
 </html>
