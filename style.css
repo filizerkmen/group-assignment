@@ -7,6 +7,27 @@ body {
     font-style: normal;
 }
 
+.topnav {
+    background-color: #673a03 ;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.topnav a:hover {;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: indianred;
+}
+
 .hero {
     width: 100vw;
     height: 100vh;
