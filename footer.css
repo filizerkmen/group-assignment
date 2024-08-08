@@ -18,12 +18,13 @@
 .footer-content p {
     margin: 0;
     flex: 1 1 100%;
+    padding: 20px;
 }
 
 .footer-links,
 .social-media {
     list-style: none;
-    padding: 0;
+    padding: 20px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
